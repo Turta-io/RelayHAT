@@ -1,4 +1,4 @@
-# Turta IoT HAT Helper for Raspbian
+# Turta Relay HAT Helper for Raspbian
 # Distributed under the terms of the MIT license.
 
 import RPi.GPIO as GPIO
