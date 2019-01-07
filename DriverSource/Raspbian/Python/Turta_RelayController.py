@@ -38,7 +38,7 @@ class RelayController:
     def set_relay(self, ch, st):
         """Controls the relay.
         :param ch: Relay channel. 1 to 4.
-        :param st: Relay state. True of False."""
+        :param st: Relay state. True or False."""
 
         if (ch == 1):
             GPIO.output(self.relay1, GPIO.HIGH if st else GPIO.LOW)
