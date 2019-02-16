@@ -1,8 +1,9 @@
 import time
-import Turta_RelayController
+from turta_relayhat import Turta_RelayHAT
+#Install Relay HAT library with "pip install turta-relayhat"
 
 #Initialize
-rc = Turta_RelayController.RelayController()
+rc = Turta_RelayHAT.RelayHAT()
 
 try:
     while 1:

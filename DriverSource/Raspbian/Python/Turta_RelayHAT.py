@@ -1,17 +1,16 @@
-# Turta Relay HAT Helper for Raspbian
+# Turta Relay HAT Library for Raspbian
 # Distributed under the terms of the MIT license.
 
 # Python Driver for Relays
-# Version 1.01
-# Updated: July 14th, 2018
+# Version 1.02
+# Updated: February 16th, 2018
 
-# For hardware info, visit www.turta.io/relayhat
-# For questions e-mail turta@turta.io
+# Visit https://docs.turta.io for ducumentation.
 
 import RPi.GPIO as GPIO
 
-class RelayController:
-    """Relay Controller"""
+class RelayHAT:
+    """Relay HAT"""
 
     #Variables
     is_initialized = False
@@ -72,9 +71,5 @@ class RelayController:
             GPIO.output(self.relay3, GPIO.LOW)
             GPIO.output(self.relay4, GPIO.LOW)
             GPIO.cleanup()
-            del self.relay1
-            del self.relay2
-            del self.relay3
-            del self.relay4
             del self.is_initialized
         return
